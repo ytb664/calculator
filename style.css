@@ -1,4 +1,38 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+#num-0 {
+    flex-grow: 1;
+}
+
+.operator {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
 }
