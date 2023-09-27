@@ -18,13 +18,18 @@ body {
 }
 
 .display {
+    height: 125px;
     border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .button {
     display: flex;
+    flex-grow: 1;
 }
 
 .row {
