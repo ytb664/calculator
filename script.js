@@ -21,17 +21,13 @@ function divide(num1, num2) {
 function operate(firstNumber, operator, secondNumber) {
     switch (operator) {
         case '+':
-            add(firstNumber, secondNumber);
-            break;
+            return add(firstNumber, secondNumber);
         case '-':
-            subtract(firstNumber, secondNumber);
-            break;
+            return subtract(firstNumber, secondNumber);
         case '*':
-            multiply(firstNumber, secondNumber);
-            break;
+            return multiply(firstNumber, secondNumber);
         case '/':
-            divide(firstNumber, secondNumber);
-            break;
+            return divide(firstNumber, secondNumber);
         default:
             break;
     }
