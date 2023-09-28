@@ -52,8 +52,9 @@ body {
 }
 
 .operator {
+    width: max-content;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: stretch;
     gap: 5px;
 }
