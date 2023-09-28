@@ -32,38 +32,49 @@ function setOperator() {
         el.addEventListener('click', () => {
 
             let theOperator = el.textContent;
+            console.log(`old operator : ${operator}`)
 
             if (firstNumber === undefined) {
                 setFirstNumber();
                 displayedNumbers = [];
             } else if (secondNumber === undefined) {
                 secondNumber = setSecondNumber();
-                console.log(`secondNumber = ${secondNumber}`);
 
                 let result = operate(firstNumber, operator, secondNumber);
                 display.textContent = result;
             }
 
-            operator = theOperator;
+            if (theOperator !== '=') {
+                operator = theOperator;
+            } else {
+                clearVar();
+            }
 
-            console.log(`operator : ${operator}`)
+            console.log(`new operator : ${operator}`)
         });
     }
 }
 
 function setSecondNumber() {
 
-    secondNumber = displayedNumbers;
+    secondNumber = Number(displayedNumbers.join(''));
+    console.log(`secondNumber = ${secondNumber}`)
+
+    return secondNumber;
 }
 
 function clearing() {
+
+    clearVar();
+    display.textContent = 0;
+}
+
+function clearVar() {
 
     firstNumber = undefined;
     operator = undefined;
     secondNumber = undefined;
     displayedNumbers = [];
-
-    display.textContent = 0;
 }
 
 function displayNumbers () {
