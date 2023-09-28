@@ -46,16 +46,11 @@ function setOperator() {
 
             if (theOperator !== '=' && secondNumber !== undefined) {
                 firstNumber = result;
-                console.log(`result = ${result}`)
-                console.log(`firstNumber = ${firstNumber}`)
 
                 secondNumber = undefined;
                 result = undefined;
-                console.log(`secondNumber = ${secondNumber}`)
-                console.log(`new result = ${result}`)
 
                 displayedNumbers = [result];
-                console.log(`displayedNumbers = ${displayedNumbers}`)
             }
             if (theOperator !== '=') {
                 operator = theOperator;
