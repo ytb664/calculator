@@ -61,6 +61,12 @@ body {
     background-color: #f8720e;
 }
 
+.btn.clear:active {
+    background-color: #f8720e;
+    box-shadow: 0 0.5px #666;
+    transform: translateY(4px);
+}
+
 .numbers {
     display: flex;
     flex-direction: column;
@@ -71,6 +77,12 @@ body {
 
 .numbers .row .btn:hover {
     background-color: #2a7bac;
+}
+
+.numbers .row .btn:active {
+    background-color: #2a7bac;
+    box-shadow: 0 0.5px #666;
+    transform: translateY(4px);
 }
 
 .row {
@@ -118,4 +130,10 @@ body {
 
 .operator .btn:hover {
     background-color: #f8720e;
+}
+
+.operator .btn:active {
+    background-color: #f8720e;
+    box-shadow: 0 0.5px #666;
+    transform: translateY(4px);
 }
