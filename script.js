@@ -19,7 +19,6 @@ function runCalculator() {
 function setFirstNumber() {
 
     firstNumber = Number(displayedNumbers.join(''));
-    console.log(`firstNumber = ${firstNumber}`)
 
     return firstNumber;
 }
@@ -32,7 +31,6 @@ function setOperator() {
         el.addEventListener('click', () => {
 
             let theOperator = el.textContent;
-            console.log(`old operator : ${operator}`)
 
             if (firstNumber === undefined) {
                 setFirstNumber();
@@ -50,7 +48,6 @@ function setOperator() {
                 clearVar();
             }
 
-            console.log(`new operator : ${operator}`)
         });
     }
 }
@@ -58,7 +55,6 @@ function setOperator() {
 function setSecondNumber() {
 
     secondNumber = Number(displayedNumbers.join(''));
-    console.log(`secondNumber = ${secondNumber}`)
 
     return secondNumber;
 }
