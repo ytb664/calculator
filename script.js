@@ -1,3 +1,24 @@
+const display = document.querySelector('.display');
+let displayedNumbers = [];
+
+displayNumbers();
+
+function displayNumbers () {
+
+    const clickedNumber = document.querySelectorAll('.numbers .row .btn');
+
+    for (let i = 0; i < clickedNumber.length; i++) {
+        clickedNumber[i].addEventListener('click', () => {
+
+            let theNumber = clickedNumber[i].textContent;
+            displayedNumbers.push(theNumber);
+
+            console.log(theNumber);
+            display.textContent = displayedNumbers.join('');
+        });
+    }
+}
+
 let firstNumber = 0;
 let operator = ['+', '-', '*', '/'];
 let secondNumber = 0;
