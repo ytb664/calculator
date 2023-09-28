@@ -47,6 +47,7 @@ body {
     color: #fbfcfb;
     border-color: #8e604c;
     border-radius: 15px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,12 +57,20 @@ body {
     background-color: #fdb231;
 }
 
+.btn.clear:hover {
+    background-color: #f8720e;
+}
+
 .numbers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
     flex-grow: 2;
+}
+
+.numbers .row .btn:hover {
+    background-color: #2a7bac;
 }
 
 .row {
@@ -105,4 +114,8 @@ body {
 .operator .btn {
     flex-grow: 1;
     background-color: #fdb231;
+}
+
+.operator .btn:hover {
+    background-color: #f8720e;
 }
