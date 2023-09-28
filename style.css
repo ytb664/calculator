@@ -7,6 +7,7 @@ body {
 }
 
 .container {
+    background-color: #dbb688;
     width: 500px;
     height: 700px;
     box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
 }
 
 .display {
+    background-color: #39d2c1;
     font-family: 'ArcadeClassic', sans-serif;
     font-size: 60px;
     height: 125px;
@@ -33,18 +35,56 @@ body {
 .button {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 5px;
+    flex-grow: 1;
+}
+
+.btn {
+    text-align: center;
+    font-size: 30px;
+    color: #fbfcfb;
+    border-color: #8e604c;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.clear {
+    background-color: #fdb231;
 }
 
 .numbers {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 5px;
+    flex-grow: 2;
 }
 
 .row {
     display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
     gap: 5px;
+}
+
+.row .btn {
+    background-color: #279eb4;
+    color: #fbfcfb;
+}
+
+.row #num-0 {
+    flex-grow: 2;
+}
+
+.row #point {
+    flex-grow: 1;
+}
+
+.button .btn {
+    flex-grow: 1;
 }
 
 #num-0 {
@@ -55,6 +95,13 @@ body {
     width: max-content;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: stretch;
     gap: 5px;
+    flex-grow: 1;
+}
+
+.operator .btn {
+    flex-grow: 1;
+    background-color: #fdb231;
 }
