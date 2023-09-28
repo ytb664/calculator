@@ -18,9 +18,9 @@ function displayNumbers () {
     }
 }
 
-let firstNumber = 0;
-let operator = ['+', '-', '*', '/'];
-let secondNumber = 0;
+let firstNumber;
+let operator;
+let secondNumber;
 
 function add(num1, num2) {
     return num1 + num2;
