@@ -13,7 +13,6 @@ function displayNumbers () {
             let theNumber = clickedNumber[i].textContent;
             displayedNumbers.push(theNumber);
 
-            console.log(theNumber);
             display.textContent = displayedNumbers.join('');
         });
     }
