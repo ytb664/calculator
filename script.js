@@ -27,6 +27,8 @@ function setOperator() {
 
     const clickedOperator = document.querySelectorAll('.operator .btn');
 
+    let result;
+
     for (let el of clickedOperator) {
         el.addEventListener('click', () => {
 
@@ -38,16 +40,28 @@ function setOperator() {
             } else if (secondNumber === undefined) {
                 secondNumber = setSecondNumber();
 
-                let result = operate(firstNumber, operator, secondNumber);
+                result = operate(firstNumber, operator, secondNumber);
                 display.textContent = result;
             }
 
+            if (theOperator !== '=' && secondNumber !== undefined) {
+                firstNumber = result;
+                console.log(`result = ${result}`)
+                console.log(`firstNumber = ${firstNumber}`)
+
+                secondNumber = undefined;
+                result = undefined;
+                console.log(`secondNumber = ${secondNumber}`)
+                console.log(`new result = ${result}`)
+
+                displayedNumbers = [result];
+                console.log(`displayedNumbers = ${displayedNumbers}`)
+            }
             if (theOperator !== '=') {
                 operator = theOperator;
             } else {
                 clearVar();
             }
-
         });
     }
 }
